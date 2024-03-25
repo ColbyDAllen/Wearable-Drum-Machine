@@ -1,3 +1,13 @@
+/**
+  3.24.2024:
+  This file is outdated.
+  New code for 
+    FSR sensors, 
+    MIDI File Storage, and 
+    MIDI Looper 
+  can be found under "Version 1" directory.
+*/
+
 // Libraries
 #include "AudioSampleKickkhronos.h"
 #include "AudioSampleHh1khronos.h"
