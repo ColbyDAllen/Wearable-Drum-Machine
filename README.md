@@ -5,7 +5,6 @@ This project is still in development. I'm currently focused on creating a custom
 
 
 04/01/2024 | Regarding software/code:
-
 Until I've split these up into functional sections, the .ino sketches will build on each other in the following order:
 1) FSR Input
 2) SMF File Storage
