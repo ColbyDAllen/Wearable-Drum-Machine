@@ -1,6 +1,6 @@
 /**
   3.25.2024:
-  This file is outdated.
+  This file is outdated. Latest version can be found in the most recent "Version" folder of this repo.
   New code for 
     FSR sensors, 
     MIDI File Storage, and 
