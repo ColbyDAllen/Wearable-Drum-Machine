@@ -2,7 +2,7 @@
 
 This project is still in development. 
 
-On the hardware side, I'm focused on creating more reliable FSR finger sensors
+On the hardware side, I'm focused on creating more reliable FSR finger sensors.
 
 On the circuitry side, I'm designing a custom PCB that incorporates power management, sensor ports, and an embedded speaker module.
 
