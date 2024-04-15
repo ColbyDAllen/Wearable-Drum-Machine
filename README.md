@@ -4,7 +4,7 @@ This project is still in development.
 
 On the hardware side, I'm focused on creating more reliable FSR finger sensors.
 
-On the circuitry side, I'm designing a custom PCB that incorporates power management, sensor ports, and an embedded speaker module.
+On the circuitry side, I'm designing a custom PCB that incorporates power management, sensor/usb/programmig ports, and an embedded speaker module.
 
 The software side is still in my backlog. want to fine-tune / build-out the MIDI looping functionality and create a richer way to sewuence these patterns. variable tempo control is also backlogged.
 
