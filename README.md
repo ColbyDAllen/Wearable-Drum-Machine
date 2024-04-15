@@ -7,7 +7,7 @@ Weather resistant (magentic charger?) enclosure design is backlogged.
 
 On the circuitry side, I'm designing a custom PCB that incorporates power management, sensor/usb/programmig ports, and an embedded speaker module. 
 
-The software side is still in my backlog. I want to fine-tune / build-out the MIDI looping functionality and create a richer way to sequence these patterns. Variable tempo control in standalone operation (via rotary encoder) is also backlogged.
+On the software side there's a number of backlogged tasks. I want to fine-tune / build-out the MIDI looping functionality and create a richer way to sequence these patterns. Variable tempo control in standalone operation (via rotary encoder) is also backlogged.
 
 ----
 
