@@ -1,5 +1,6 @@
 # StandaloneMIDISequencingDrummingGlove
 
+4/15/2024 |
 This project is still in development. 
 
 On the hardware side, I'm focused on creating more reliable FSR finger sensors.
