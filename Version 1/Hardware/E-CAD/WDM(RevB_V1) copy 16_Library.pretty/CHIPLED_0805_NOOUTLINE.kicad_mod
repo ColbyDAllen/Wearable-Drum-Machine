@@ -1,0 +1,165 @@
+(footprint "CHIPLED_0805_NOOUTLINE" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (property "DK Link" "https://www.digikey.com/en/products/detail/broadcom-limited/HSMC-C170/637689")
+  (property "LCSC" "")
+  (property "Sheetfile" "WDM(RevB_V1).kicad_sch")
+  (property "Sheetname" "")
+  (property "ki_description" "Light emitting diode")
+  (property "ki_keywords" "LED diode")
+  (fp_text reference "REF**" (at -0.5842 2.6314) (layer "F.SilkS")
+      (effects (font (size 0.554736 0.554736) (thickness 0.054864)) (justify right bottom))
+    (tstamp 857eeb90-895b-4c68-a36f-1a960a609ba1)
+  )
+  (fp_text value "RED" (at 3.429 0.193) (layer "F.Fab")
+      (effects (font (size 0.554736 0.554736) (thickness 0.054864)) (justify left bottom))
+    (tstamp 79049ed0-fa0e-48a8-a805-40f0442c7795)
+  )
+  (fp_text user "C" (at -0.1 -1.2) (layer "F.Fab")
+      (effects (font (size 0.554736 0.554736) (thickness 0.054864)) (justify right bottom))
+    (tstamp 6604dc5d-9fc8-4354-aeeb-cb8324533756)
+  )
+  (fp_text user "A" (at -0.1 1.4) (layer "F.Fab")
+      (effects (font (size 0.554736 0.554736) (thickness 0.054864)) (justify right bottom))
+    (tstamp d58ec9b1-17af-4874-89c1-b64a1dccf624)
+  )
+  (fp_poly
+    (pts
+      (xy 0.5334 0.3302)
+      (xy -0.5334 0.3302)
+      (xy 0 -0.381)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.SilkS") (tstamp ab4afcc7-8ba1-409e-8328-f5fa2c1f4955))
+  (fp_poly
+    (pts
+      (xy -0.4445 -0.1405)
+      (xy 0.4445 -0.1405)
+      (xy 0.4445 -0.331)
+      (xy -0.4445 -0.331)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.SilkS") (tstamp 0917f4d7-1ef4-4cf3-86a0-e5321384eeb8))
+  (fp_line (start -0.575 0.5) (end -0.575 -0.925)
+    (stroke (width 0.1016) (type solid)) (layer "F.Fab") (tstamp 880ed118-ee2c-4bc5-b864-7a632cf82dea))
+  (fp_line (start 0.575 -0.525) (end 0.575 0.525)
+    (stroke (width 0.1016) (type solid)) (layer "F.Fab") (tstamp 43fe2a31-0843-4c1f-86f5-30066131dee1))
+  (fp_arc (start -0.35 0.925) (mid -0.000001 0.625027) (end 0.35 0.924998)
+    (stroke (width 0.1016) (type solid)) (layer "F.Fab") (tstamp 528693ce-94e7-4570-a86b-e97433cd7ab0))
+  (fp_arc (start 0.35 -0.924998) (mid -0.000001 -0.625027) (end -0.35 -0.925)
+    (stroke (width 0.1016) (type solid)) (layer "F.Fab") (tstamp 2e7587a2-e68d-40ec-9d58-1e80e0fe0612))
+  (fp_circle (center -0.45 -0.85) (end -0.347 -0.85)
+    (stroke (width 0.0762) (type solid)) (fill none) (layer "F.Fab") (tstamp 267bacba-b5e2-4094-880a-0a2f0b10d57c))
+  (fp_poly
+    (pts
+      (xy -0.625 -0.925)
+      (xy -0.3 -0.925)
+      (xy -0.3 -1)
+      (xy -0.625 -1)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 6ed38d70-d00f-4d8b-a50d-272551a9ed64))
+  (fp_poly
+    (pts
+      (xy -0.625 1)
+      (xy -0.3 1)
+      (xy -0.3 0.5)
+      (xy -0.625 0.5)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 730b379d-b448-4215-94a9-54177c266669))
+  (fp_poly
+    (pts
+      (xy -0.6 -0.5)
+      (xy -0.3 -0.5)
+      (xy -0.3 -0.762)
+      (xy -0.6 -0.762)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 8ed2ca34-d259-4ef6-8175-04d66c953ebe))
+  (fp_poly
+    (pts
+      (xy -0.325 -0.5)
+      (xy -0.175 -0.5)
+      (xy -0.175 -0.75)
+      (xy -0.325 -0.75)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 7717a9a7-85e3-4daa-8bf5-86d51e2af426))
+  (fp_poly
+    (pts
+      (xy -0.325 0.75)
+      (xy -0.175 0.75)
+      (xy -0.175 0.5)
+      (xy -0.325 0.5)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 75ad9d3b-cdcb-4729-96a6-98a35a9ff3fb))
+  (fp_poly
+    (pts
+      (xy -0.2 -0.5)
+      (xy 0.2 -0.5)
+      (xy 0.2 -0.675)
+      (xy -0.2 -0.675)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp b45d51a4-e102-4d44-92c8-b81df6f0fd2f))
+  (fp_poly
+    (pts
+      (xy -0.2 0.675)
+      (xy 0.2 0.675)
+      (xy 0.2 0.5)
+      (xy -0.2 0.5)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 47be2459-1f11-405f-b02c-b9e7f6be92dd))
+  (fp_poly
+    (pts
+      (xy 0.175 -0.5)
+      (xy 0.325 -0.5)
+      (xy 0.325 -0.75)
+      (xy 0.175 -0.75)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 6b574dda-2b64-49a4-80f8-4acc68d1aa70))
+  (fp_poly
+    (pts
+      (xy 0.175 0.75)
+      (xy 0.325 0.75)
+      (xy 0.325 0.5)
+      (xy 0.175 0.5)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp e053cbd7-bde6-4d4b-af2e-e00fa8a32b59))
+  (fp_poly
+    (pts
+      (xy 0.3 -0.5)
+      (xy 0.625 -0.5)
+      (xy 0.625 -1)
+      (xy 0.3 -1)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 3bf9e9a3-26ae-47b7-995f-d141560fcfcb))
+  (fp_poly
+    (pts
+      (xy 0.3 1)
+      (xy 0.625 1)
+      (xy 0.625 0.5)
+      (xy 0.3 0.5)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp b07c6e10-f87e-4bab-a8f3-2a3ce5c8c2e4))
+  (pad "A" smd rect (at 0 1.05 180) (size 1.2 1.2) (layers "F.Cu" "F.Paste" "F.Mask")
+    (solder_mask_margin 0.0508) (thermal_bridge_angle 0) (tstamp e2f1992e-c8e3-4e6b-a286-d65c0dee3b80))
+  (pad "C" smd rect (at 0 -1.05 180) (size 1.2 1.2) (layers "F.Cu" "F.Paste" "F.Mask")
+    (solder_mask_margin 0.0508) (thermal_bridge_angle 0) (tstamp 7e8396b0-08ba-419f-818e-ed45019ccdcb))
+  (model "${WDM_COMONENTS_3D}/0805-smd-led-1.snapshot.1/SMD_0805LED_RED.STEP" hide
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
+  (model "${WDM_COMONENTS_3D}/HSMD_C170/HSMD-C170.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 90 180 90))
+  )
+)
