@@ -1,0 +1,4 @@
+Plotted to 'C:\Users\Colby\Desktop\Programs\KiCad\WDM_RevB_v3\WDM_RevB_v3\WDM_RevB_v3_PlotPDF\WDM_RevB_v3-Edge_Cuts.pdf'.
+Plotted to 'C:\Users\Colby\Desktop\Programs\KiCad\WDM_RevB_v3\WDM_RevB_v3\WDM_RevB_v3_PlotPDF\WDM_RevB_v3-F_Fab.pdf'.
+Plotted to 'C:\Users\Colby\Desktop\Programs\KiCad\WDM_RevB_v3\WDM_RevB_v3\WDM_RevB_v3_PlotPDF\WDM_RevB_v3-B_Fab.pdf'.
+Info: Done.
