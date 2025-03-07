@@ -4,11 +4,11 @@
 #include "AudioSystem.h"
 #include "MIDIHandler.h"
 #include "FSRHandler.h"
-#include "MIDIFileWriter.h"
-extern MIDIFileWriter midiFileWriter;
 #include "SequencerHandler.h"
 #include "SdBrowse.h"
-
+#include "LoopedNoteFunctions.h"
+#include "MIDIFileWriter.h"
+extern MIDIFileWriter midiFileWriter;
 
 #include "AudioSampleKickkhronos.h" 
 #include "AudioSampleHh1khronos.h" 
@@ -18,35 +18,27 @@ extern MIDIFileWriter midiFileWriter;
 #include <Audio.h> 
 #include <Wire.h> 
 #include <SPI.h> 
-#include <SD.h> // switched to <SdFat.h> on 1.20.25 
-//#include <SdFat.h> 
+#include <SD.h> 
 #include <MIDI.h> 
-//#include <usb_midi.h> 
 #include <SerialFlash.h> 
 #include <ResponsiveAnalogRead.h> 
-#include <RTClib.h> // if you want RTC usage 
+#include <RTClib.h> 
 
-#include "LoopedNoteFunctions.h"
-
-
-
-AudioSystem audioSys; // your global or static instance
-MIDIHandler midiHandler; // your global or static instance
+AudioSystem audioSys; 
+MIDIHandler midiHandler; 
 FSRHandler fsrHandler;
 SequencerHandler sequencerHandler;
 MIDIFileWriter midiFileWriter;
 SDBrowse sdBrowse;
-// ... or pass references around as needed
 
 void setup() {
   Serial.begin(115200);
   delay(1200);
   Serial.println("Booting FULL Wearable Drum + SerialFlash approach...");
 
-  // Then call your AudioSystem init:
   audioSys.initAudioSystem();
 
-  // Pins 
+  // Pin Assignments
   pinMode(RECPin, INPUT_PULLUP); 
   pinMode(startPin, INPUT_PULLUP); 
   pinMode(pushRotaryPin, INPUT_PULLUP); 
@@ -65,60 +57,50 @@ void setup() {
   } 
   pinMode(PLACE_MARKER_PIN, INPUT); 
 
-  // // MIDI Setup
-  // usbMIDI.setHandleNoteOn(myNoteOn); 
-  // usbMIDI.setHandleNoteOff(myNoteOff); 
-  // usbMIDI.setHandleControlChange(myControlChange); 
-  // usbMIDI.setHandleAfterTouchPoly(myAfterTouchPoly); 
-  // usbMIDI.setHandleStart(Handle_Start); 
-  // usbMIDI.begin(); 
-
   midiHandler.initMIDI();
 
-    // If RTC: 
-    /* 
-      if(RTC.begin()) { 
-        SdFile::dateTimeCallback(dateTime); 
-        HAS_RTC = true;
-    } 
-    */ 
+  // If RTC: 
+  /* 
+    if(RTC.begin()) { 
+      SdFile::dateTimeCallback(dateTime); 
+      HAS_RTC = true;
+  } 
+  */ 
 
-  // init SD 
+  // Initialize microSD card 
   if(!SD.begin(BUILTIN_SDCARD)) { 
     Serial.println("SD.begin(BUILTIN_SDCARD) fail!"); 
   } else { 
     Serial.println("SD OK. "); 
   } 
 
-  // init SerialFlash on pin 6 
+  // Initialize SerialFlash on pin 6 
   if(!SerialFlash.begin(6)) { 
     Serial.println("SerialFlash.begin(6) FAIL or chip not detected!"); 
   } else { 
     Serial.println("SerialFlash is ready on pin 6. (Ensure EraseEverything done.)"); 
   } 
 
+  // Initialize file writing 
   midiFileWriter.creatNextFile(); 
   if(file) { 
     midiFileWriter.writeMidiPreamble(); 
   } 
 
-  fsrHandler.initFSRs(); // sets up each FSR with ResponsiveAnalogRead
-
-  
-  // ... plus any other top-level initialization (e.g. pinModes, scanning SD, etc.).
+  fsrHandler.initFSRs(); // sets up each FSR with ResponsiveAnalogRead (among other things)
 }
 
 void loop() {
 
-  midiHandler.updateMIDI(); // read midi
-  // usbMIDI.read(); // handle real-time MIDI
-
+  // Read MIDI activity
+  midiHandler.updateMIDI(); 
+  
   #ifdef SEND_INT_CLOCK
     SendClock();
     //sequencer.SendClock(); 
   #endif
 
-  // Update Sequencer logic
+  // Update sequencer logic
   sequencerHandler.update(); // this calls if(PLAY){SequenceNotes();...}
 
   // Sample browsing
@@ -132,17 +114,7 @@ void loop() {
   midiFileWriter.updateFile();
 
   sdBrowse.updatePreview();
-
-
-
-
-
 }
-
-
-
-
-
 
 //===================================================================
 // SendClock, myNoteOnLooped, myNoteOffLooped
