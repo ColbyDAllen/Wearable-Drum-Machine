@@ -1,6 +1,9 @@
 # Wearable Drum Machine 
 # StandaloneMIDISequencingDrummingGlove
 
+12/15/2024 |
+This project is complete. Further information can be found at www.colbydanielallen.com.
+
 4/15/2024 |
 This project is still in development. 
 
