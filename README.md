@@ -2,7 +2,7 @@
 # StandaloneMIDISequencingDrummingGlove
 
 12/15/2024 |
-This project is complete. 
+This project is mostly complete. Until I can find better a more suitable input/sensory solution, please consider this work on hiatus.
 
 Further information can be found at www.colbydanielallen.com.
 
