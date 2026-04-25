@@ -1,5 +1,4 @@
 # Wearable Drum Machine 
-# StandaloneMIDISequencingDrummingGlove
 
 12/15/2024 |
 
