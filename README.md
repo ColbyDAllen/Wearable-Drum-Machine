@@ -24,4 +24,3 @@ Until I've split these up into functional sections, the .ino sketches will build
 1) FSR Input
 2) SMF File Storage
 3) MIDI Looper
-4) ...
